@@ -12,5 +12,4 @@ print( a > b )
 # ==, !=, >, <, >=, <=
 
 #logical operators - and, or, not
-print((a>2) or (b>2))
-
+print((a>=2) or (b<6))
