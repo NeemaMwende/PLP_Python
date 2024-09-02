@@ -55,13 +55,35 @@
 # print('Done', istr)
 
 # Different example
-rawstr = input('Enter a number:')
-try:
-    ival = int(rawstr)
-except:
-    ival = -1
+# rawstr = input('Enter a number:')
+# try:
+#     ival = int(rawstr)
+# except:
+#     ival = -1
 
-if ival > 0:
-    print("Nice work")
-else:
-    print("Not a number")
+# if ival > 0:
+#     print("Nice work")
+# else:
+#     print("Not a number")
+
+# # if  x == 5 :
+# #     print('Is 5')
+# #     print('Is Still 5')
+# #     print('Third 5')
+
+# x = 0
+# if x < 2 :
+#     print('Small')
+# elif x < 10 :
+#     print('Medium')
+# else :
+#     print('LARGE')
+# print('All done')
+
+astr = 'Hello Bob'
+istr = 0
+try:
+    istr = int(astr)
+except:
+    istr = -1
+print(astr, istr)
