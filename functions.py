@@ -55,16 +55,16 @@
 #     return sum
 # print("Total: ", add_ages(angel= 23, Lexin=24, Victor=25))
 
-global_var = 13
+# global_var = 13
 
-def add_nums(a, b):
-    total = a + b
-    print("Global variable in outer function: ", global_var)
-    def double_it():
-        #local variable
-        double = total * 2
-        print("Global variable in inner function: ", global_var)
-    double_it()
-    return total
+# def add_nums(a, b):
+#     total = a + b
+#     print("Global variable in outer function: ", global_var)
+#     def double_it():
+#         #local variable
+#         double = total * 2
+#         print("Global variable in inner function: ", global_var)
+#     double_it()
+#     return total
 
-add_nums(13, 5)
+# add_nums(13, 5)
