@@ -80,10 +80,34 @@
 #     print('LARGE')
 # print('All done')
 
-astr = 'Hello Bob'
-istr = 0
-try:
-    istr = int(astr)
-except:
-    istr = -1
-print(astr, istr)
+# astr = 'Hello Bob'
+# istr = 0
+# try:
+#     istr = int(astr)
+# except:
+#     istr = -1
+# print(astr, istr)
+
+# bill = 1900
+# discount1 = 100
+
+# if bill > 2000:
+#     print("Bill is greater than 2000")
+#     bill = bill - discount1
+# else:
+#     print("Bill is less than 2000")
+
+# print("Final bill is: " + str(bill))
+
+grade = 83
+
+if grade >= 90:
+    print("A")
+elif grade >= 80:
+    print("B")
+elif grade >= 70:
+    print("C")
+elif grade >= 60:
+    print("D")
+else:
+    print("F")
