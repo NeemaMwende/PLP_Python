@@ -24,3 +24,16 @@ else:
     print("File content:", content)
 finally:
     print("File handling operation completed")
+
+#example 3
+# Dictionary of students with their ages
+students = {"Nora": 15, "Gino": 30}
+# Prompt user for input
+name = input("Please enter the name of the student: ")
+try:
+    # Try to get the age of the student
+    age = students[name]
+    print(f"The age of {name} is {age}.")
+except KeyError:
+    # Handle the case where the name is not in the dictionary
+    print(f"Error: Student with name '{name}' not found.")
