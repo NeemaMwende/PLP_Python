@@ -57,3 +57,38 @@ s_car.Vehicle_info()
 s_car.car_info()
 s_car.sportcar_info()
 
+#hierarchical inheritance - multiple derived child classes from a single parent class
+# Parent class
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def sound(self):
+        return "Some generic animal sound"
+
+# Child class 1 inheriting from Animal
+class Dog(Animal):
+    def __init__(self, name, breed):
+        super().__init__(name)  # Call the parent class constructor
+        self.breed = breed
+
+    def sound(self):
+        return "Bark"
+
+# Child class 2 inheriting from Animal
+class Cat(Animal):
+    def __init__(self, name, color):
+        super().__init__(name)  # Call the parent class constructor
+        self.color = color
+
+    def sound(self):
+        return "Meow"
+
+# Creating objects for Dog and Cat classes
+dog = Dog("Buddy", "Golden Retriever")
+cat = Cat("Whiskers", "White")
+
+# Accessing the methods and attributes
+print(f"{dog.name} is a {dog.breed} and it says: {dog.sound()}")
+print(f"{cat.name} is a {cat.color} cat and it says: {cat.sound()}")
+
