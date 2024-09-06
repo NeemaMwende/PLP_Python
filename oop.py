@@ -49,7 +49,18 @@ class Person:
         self.age = age
 
     def displayInfo(self):
-        print("Person Name: ", self.name, "Age: ",self.age)
+        print("Person Name: ", self.name)
+        if hasattr(self, 'age'):  # Check if the 'age' attribute exists
+            print("Age: ", self.age)
+        else:
+            print("Age: not available")
 
 p1 = Person("Victor", 20)
-p1.displayInfo()
+p1.displayInfo()  # Display both name and age
+del p1.age        # Delete the 'age' attribute
+p1.displayInfo()  # Display only the name, handle missing 'age'
+
+
+# std = Person("Victor", 20)
+# del std.age
+# p1.displayInfo()
