@@ -92,3 +92,55 @@ cat = Cat("Whiskers", "White")
 print(f"{dog.name} is a {dog.breed} and it says: {dog.sound()}")
 print(f"{cat.name} is a {cat.color} cat and it says: {cat.sound()}")
 
+#hybrid - Hybrid Inheritance is the mixture of two or more different types of inheritance. Here we can have many relationships between parent and child classes with multiple levels.
+# Parent class
+class Vehicle:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+
+    def vehicle_info(self):
+        print(f"Vehicle Brand: {self.brand}, Model: {self.model}")
+
+# Child class 1 (Hierarchical inheritance from Vehicle)
+class Car(Vehicle):
+    def __init__(self, brand, model, doors):
+        super().__init__(brand, model)
+        self.doors = doors
+
+    def car_info(self):
+        print(f"This car has {self.doors} doors.")
+
+# Child class 2 (Hierarchical inheritance from Vehicle)
+class Truck(Vehicle):
+    def __init__(self, brand, model, capacity):
+        super().__init__(brand, model)
+        self.capacity = capacity
+
+    def truck_info(self):
+        print(f"This truck has a capacity of {self.capacity} tons.")
+
+# Another child class (Multiple inheritance from Car and Vehicle)
+class SportCar(Car, Vehicle):
+    def __init__(self, brand, model, doors, speed):
+        Car.__init__(self, brand, model, doors)  # Inheriting from Car
+        self.speed = speed
+
+    def sport_car_info(self):
+        print(f"This sport car can go up to {self.speed} km/h.")
+
+# Testing the classes
+# Vehicle -> Car -> SportCar
+sport_car = SportCar("Ferrari", "488", 2, 330)
+sport_car.vehicle_info()
+sport_car.car_info()
+sport_car.sport_car_info()
+
+print()
+
+# Vehicle -> Truck
+truck = Truck("Ford", "F-150", 5)
+truck.vehicle_info()
+truck.truck_info()
+
+
