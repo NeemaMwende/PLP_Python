@@ -37,5 +37,23 @@ emp = Employee()
 emp.person_info("Jesse", 28)
 emp.company_info("Google", "Atlanta")
 emp.employee_info(12000, "Machine Learning")
-        
+
+#Multilevel inheritance
+# class inherits from a child class or a derived class
+class Vehicle:
+    def Vehicle_info(self):
+        print("Inside grandparent class")
+
+class Car(Vehicle):
+    def car_info(self):
+        print("Car name is:")
+
+class Sportcar(Car):
+    def sportcar_info(self):
+        print("Inside sportscar clas")
+
+s_car = Sportcar()
+s_car.Vehicle_info()
+s_car.car_info()
+s_car.sportcar_info()
 
