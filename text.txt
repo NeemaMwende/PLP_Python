@@ -1,0 +1,16 @@
+﻿ID,Name,Age,Grade,Math Score,English Score,Science Score
+1,John Doe,16,10,85,78,92
+2,Jane Smith,15,10,90,88,84
+3,Emily Davis,16,11,75,95,89
+4,Michael Brown,17,12,65,70,78
+5,Linda Johnson,15,10,88,82,91
+6,William Wilson,17,11,95,90,85
+7,Elizabeth Taylor,16,12,80,88,93
+8,James Anderson,16,10,78,85,88
+9,Alice Walker,15,10,92,90,87
+10,Robert Johnson,16,11,82,79,90
+11,Sophia Lewis,17,12,91,93,89
+12,Daniel Martinez,16,10,76,80,83
+13,Mia Robinson,15,10,87,85,90
+14,David Clark,17,11,70,75,80
+15,Olivia King,16,12,84,89,92
