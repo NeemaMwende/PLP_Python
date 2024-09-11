@@ -1,0 +1,6 @@
+Hello, this is my assignment
+My name is Neema
+I will be a PLP Alumni soon
+Appending new line: Python is great!
+Let's append another line.
+Appended line number 3.
