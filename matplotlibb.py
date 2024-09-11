@@ -9,31 +9,36 @@
 # Contour plots: used to plot data as a series of contours or lines.
 
 #line plot
-import matplotlib.pyplot as plt
-import numpy as np
-
-x = np.linspace(0, 10, 100)
-y = np.sin(x)
-
-plt.plot(x,  y)
-plt.xlabel('x')
-plt.ylabel('sin(x)')
-plt.title('Line plot pf sin(x)')
-plt.show()
+# import matplotlib.pyplot as plt
+# import numpy as np
+# x = np.linspace(0, 10, 100)
+# y = np.sin(x)
+# plt.plot(x,  y)
+# plt.xlabel('x')
+# plt.ylabel('sin(x)')
+# plt.title('Line plot pf sin(x)')
+# plt.show()
 
 #scatter plot
-import  matplotlib.pyplot as plt
-import numpy as np
+# import  matplotlib.pyplot as plt
+# import numpy as np
+# x = np.random.randn(100)
+# y = np.random.randn(100)
+# plt.scatter(x, y)
+# plt.xlabel('x')
+# plt.ylabel('y')
+# plt.title('Scatter plot of random data')
+# plt.show()
 
-x = np.random.randn(100)
-y = np.random.randn(100)
-plt.scatter(x, y)
-plt.xlabel('x')
-plt.ylabel('y')
-plt.title('Scatter plot of random data')
+#bar chart
+import matplotlib.pyplot as plt
+x = ['Apples', 'Bananas', 'Oranges']
+y =  [10, 15, 7]
+plt.bar(x, y)
+plt.xlabel('Fruits')
+plt.ylabel('Quantity')
+plt.title('Bar chart of fruits')
 plt.show()
-
-
 
 
 
