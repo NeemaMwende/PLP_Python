@@ -65,5 +65,3 @@ plt.ylabel('Average Math Score')
 plt.xticks(rotation=0)
 plt.grid(axis='y')
 plt.show()
-
-
