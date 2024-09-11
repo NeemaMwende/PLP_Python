@@ -35,22 +35,29 @@
 
 #Multiple interrelated modules are stored in a library. And whenever we need to use a module, we import it from its library. In Python, it’s a very simple job to do due to its easy syntax. We just need to use import.
 
-import math
-A = 16
-print(math.sqrt(A))
+# import math
+# A = 16
+# print(math.sqrt(A))
 
-from math import sqrt, sin
-A = 16
-B = 3.14
-print(sqrt(A))
-print(sin(B))
+# from math import sqrt, sin
+# A = 16
+# B = 3.14
+# print(sqrt(A))
+# print(sin(B))
 
+#Python modules are reusable pieces of code that can be imported into a program to provide additional functionality.
+#Some popular built-in modules include math, datetime, and random, while popular third-party modules include pandas, NumPy, and matplotlib.
+#Module is a file that contains code to perform a specific task. A module may contain variables, functions, classes etc. Let's see an example,
+#example.py 
+# def add(a, b):
+#     result = a + b
+#     return  result
 
+# import math as m 
+# print(m.pi)
 
-
-
-
-
+# from math import *
+# print("The value of  pi is: ", pi)
 
 
 
